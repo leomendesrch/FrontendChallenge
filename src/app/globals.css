@@ -6,7 +6,9 @@
   --delete-color: #DE3838;
   --orange-low: #FFA585;
   --darker-text: #41414D;
-  --page-color: #F0F0F5;
+  --darker-text-2: #09090A;
+  --bg-primary: #F0F0F5;
+  --shapes: #DCE2E5;
 }
 
 * {

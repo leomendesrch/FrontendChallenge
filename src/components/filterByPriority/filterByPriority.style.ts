@@ -4,6 +4,7 @@ import { styled } from "styled-components";
 export const FilterContainer = styled.div`
   display: flex;
   position: relative;
+  z-index: 1;
 `
 
 export const FilterText = styled.button`
@@ -34,6 +35,8 @@ export const PriorityFilter = styled.ul`
     margin-top: 4px;
   }
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.10);
+  z-index: 1;
+  background-color: white;
 `
 export const PriorityFilterText = styled.li`
   color: var(--text-dark);
