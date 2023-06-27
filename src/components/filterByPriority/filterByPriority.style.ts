@@ -19,6 +19,18 @@ export const FilterText = styled.button`
   background-color: transparent;
   cursor: pointer;
   gap: 8px;
+
+  @media (min-width: ${({theme}) => theme.mobileBreakPoint}){
+  font-size: 13px;
+  }
+
+  @media (min-width: ${({theme}) => theme.tabletBreakPoint}){
+  font-size: 14px;
+  }
+
+  @media (min-width: ${({theme}) => theme.desktopBreakPoint}){
+  font-size: 14px;
+  }
 `
 
 export const PriorityFilter = styled.ul`
@@ -37,6 +49,18 @@ export const PriorityFilter = styled.ul`
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.10);
   z-index: 1;
   background-color: white;
+
+  @media (min-width: ${({theme}) => theme.mobileBreakPoint}){
+  right: -20%;
+  }
+
+  @media (min-width: ${({theme}) => theme.tabletBreakPoint}){
+  right: 0;
+  }
+
+  @media (min-width: ${({theme}) => theme.desktopBreakPoint}){
+  right: 0;
+  }
 `
 export const PriorityFilterText = styled.li`
   color: var(--text-dark);

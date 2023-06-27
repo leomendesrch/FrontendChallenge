@@ -24,11 +24,12 @@ export const mountQuery = (type: FilterType, priority: PriorityTypes) => {
     } 
   }
   `
-
   const settings = getPriority(priority)
+  const categoryFilter = getCategoryByType(type)
+  console.log(categoryFilter)
 
   return `query{
-  allProducts(sortField: "${settings.field}", sortOrder: "${settings.order}", ${getCategoryByType(type)? `filter: {category: ${getCategoryByType(type)}}` : ''}){
+  allProducts(sortField: "${settings.field}", sortOrder: "${settings.order}", ${categoryFilter? `filter: {category: "${categoryFilter}"}` : ''}){
     id,
     name,
     image_url,
