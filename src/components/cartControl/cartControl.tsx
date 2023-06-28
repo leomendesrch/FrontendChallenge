@@ -1,6 +1,6 @@
 "use client"
 import { useLocalStorage } from "@/hooks/useLocalStorage";
-import { CartIcon } from "../cartIcon/cartIcon";
+import { CartIcon } from "../icons/cartIcon";
 import { CartCount, Container } from "./cartControl.style";
 
 export function CartControl(){

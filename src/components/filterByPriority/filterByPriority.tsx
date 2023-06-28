@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react";
-import { ArrowIcon } from "../arrowIcon/arrowIcon";
+import { ArrowIcon } from "../icons/arrowIcon";
 import { FilterContainer, FilterText, PriorityFilter, PriorityFilterText } from "./filterByPriority.style";
 import { useFilter } from "@/hooks/useFilter";
 import { PriorityTypes } from "@/types/priority-types";

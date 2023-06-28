@@ -2,6 +2,7 @@ import Header from '@/components/header/header'
 import './globals.css'
 import { Saira } from 'next/font/google'
 import DefaultProviders from '@/components/defaultProviders/defaultProviders'
+import { PageWrapper } from '@/components/defaultPageLayout/defaultPageLayout.style'
 
 const saira = Saira({
   weight: ['300', '400', '500', '600'],
