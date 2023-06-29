@@ -9,7 +9,7 @@ export const CardContainer = styled.div`
   backdrop-filter: blur(10px);
   width: 256px;
   border-radius: 0 0 4px 4px;
-
+  cursor: pointer;
   img{
   width: 256px;
   height: 300px;
