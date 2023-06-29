@@ -107,6 +107,7 @@ export const ProductInfoContainer = styled.div`
     line-height: 150%;
     text-transform: uppercase;
     gap: 8px;
+    mix-blend-mode: multiply;
 }
 `
 
