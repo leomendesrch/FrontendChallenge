@@ -5,15 +5,12 @@ import { ProductPageWrapper } from "@/components/pageWrapper/PageWrapper";
 import { useProduct } from "@/hooks/useProduct";
 import { FormatCents } from "@/utils/format-price";
 import { WhiteCartIcon } from "@/components/icons/white-cart-icon";
+import CategoryFormater from "@/utils/category-formater";
 
 
 export default function ProductPage({searchParams}: {searchParams: {id: string}}){
   const { data } = useProduct(searchParams.id)
 
-  function CategoryFormater(categoria: string){
-    if(categoria === 'mugs') return 'Caneca'
-    return 'Camiseta'
-  }
 
   function handleAddToCart(){
     let cartItems = localStorage.getItem('cart-items')

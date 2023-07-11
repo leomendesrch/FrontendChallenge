@@ -47,7 +47,7 @@ export const InputContainer = styled.div`
   }
 
   @media(min-width: ${({theme}) => theme.mobileBreakPoint}){
-    width: 200px;
+    width: 125px;
   }
 
   @media(min-width: ${({theme}) => theme.tabletBreakPoint}){

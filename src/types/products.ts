@@ -4,3 +4,7 @@ export interface Products {
   id: string,
   image_url: string
 }
+
+export interface ProductsInCart extends Products {
+  quantity: number
+}

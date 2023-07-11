@@ -14,6 +14,7 @@ export function useLocalStorage<T>(item: string, initialValue: T){
     setValue(newValue);
     localStorage.setItem(item,JSON.stringify(newValue));
   }
+  
   return{
     value, updateLocalStorage
   }
