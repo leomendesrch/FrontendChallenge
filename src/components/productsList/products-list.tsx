@@ -5,6 +5,7 @@ import { ListContainer } from "./products-list.style";
 
 export function ProductsList(){
   const { data } = useProducts();
+  
   return(
     <ListContainer>
       {data?.map((product) => (

@@ -1,17 +1,18 @@
+import FilterByPage from "../filterByPage/filter-by-page";
 import FilterByPriority from "../filterByPriority/filterByPriority";
 import { FilterByType } from "../filterByType/filterByType";
-import { FilterContainer } from "./filter-bar.style";
+import { Container, FiltersContainer } from "./filter-bar.style";
 
-interface FilterBarProps{
 
-}
-
-export function FilterBar(props: FilterBarProps){
+export function FilterBar(){
   return(
-    <FilterContainer>
-      <FilterByType />
-      <FilterByPriority />
-    </FilterContainer>
+    <Container>
+      <FiltersContainer>
+        <FilterByType />
+        <FilterByPriority />
+      </FiltersContainer>
+      <FilterByPage />
+    </Container>
   )
 }
 

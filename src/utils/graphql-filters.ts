@@ -14,9 +14,9 @@ export function getPriority(priority: PriorityTypes){
   return {field: "sales", order: "dsc"}
 }
 
-export const mountQuery = (type: FilterType, priority: PriorityTypes) => {
+export const mountQuery = (type: FilterType, priority: PriorityTypes, page: number) => {
   if(type === FilterType.ALL && priority === PriorityTypes.POPULARITY) return `query {
-    allProducts(sortField: "sales", sortOrder: "dsc"){ 
+    allProducts(sortField: "sales", sortOrder: "dsc", page: ${page}, perPage: 12){ 
       id
       name
       price_in_cents
@@ -29,7 +29,7 @@ export const mountQuery = (type: FilterType, priority: PriorityTypes) => {
   console.log(categoryFilter)
 
   return `query{
-  allProducts(sortField: "${settings.field}", sortOrder: "${settings.order}", ${categoryFilter? `filter: {category: "${categoryFilter}"}` : ''}){
+  allProducts(sortField: "${settings.field}", sortOrder: "${settings.order}", ${categoryFilter? `filter: {category: "${categoryFilter}"}` : ''}, page: ${page}, perPage: 12){
     id,
     name,
     image_url,

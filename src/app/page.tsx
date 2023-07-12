@@ -2,8 +2,9 @@
 
 import { FilterBar } from '@/components/filterBar/filter-bar'
 import { ProductsList } from '@/components/productsList/products-list'
-import { MainContainer } from './page.styles'
+import { FilterByPageContainer, MainContainer } from './page.styles'
 import { PageWrapper } from '@/components/pageWrapper/PageWrapper'
+import FilterByPage from '@/components/filterByPage/filter-by-page'
 
 export default function Home() {
 
@@ -13,6 +14,10 @@ export default function Home() {
       <FilterBar />
       <ProductsList />
     </MainContainer>
+
+    {/* <FilterByPageContainer>
+      <FilterByPage />
+    </FilterByPageContainer> */}
   </PageWrapper>
   )
 }
